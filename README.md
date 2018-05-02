@@ -1,14 +1,38 @@
 # San Francisco Demo Poller
 
-Simple persistent container to periodically poll [DataSF](https://data.sfgov.org/Public-Safety/Fire-Department-Calls-for-Service/nuek-vuh3) and ingest demo data into StatEngine.
+Simple persistent service to periodically poll [DataSF](https://data.sfgov.org/Public-Safety/Fire-Department-Calls-for-Service/nuek-vuh3) and ingest demo data into StatEngine.
 
-## Building
+## Developing
+
+### Install Dependencies
+```
+npm install
+```
+
+### Compile
+```
+npm compile
+```
+
+### Running
+```
+node lib/index.js
+```
+
+## Docker
+
+### Building
 
 ```
-docker build -t san-francisco-demo-poller .
+docker build -t prominentedgestatengine/san-francisco-demo-poller:latest --no-cache .
 ```
 
-## Running
+### Running
 ```
-docker run san-francisco-demo-poller
+docker run prominentedgestatengine/san-francisco-demo-poller:latest
+```
+
+## Pushing
+```
+docker push prominentedgestatengine/san-francisco-demo-poller:latest
 ```

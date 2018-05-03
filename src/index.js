@@ -30,7 +30,7 @@ function pollDates(from, to) {
 
 function poll() {
   const to = moment.utc();
-  const from = moment.utc().subtract(2, 'days');
+  const from = moment.utc().subtract(5, 'days');
   pollDates(from, to);
 }
 

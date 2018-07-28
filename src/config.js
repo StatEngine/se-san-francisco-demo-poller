@@ -5,6 +5,6 @@ module.exports = {
   },
   statEngine: {
     endpoint: process.env.STAT_ENGINE_ENDPOINT || 'http://localhost:8080/api',
-    apiKey: process.env.STAT_ENGINE_API_KEY || 'sfDemo',
+    apiKey: process.env.STAT_ENGINE_API_KEY || 'sfIngest',
   },
 };
